@@ -1,6 +1,6 @@
 package com;
 
-public class BubleSort {
+public class BubbleSort {
     public static void main(String[] args) {
         System.out.println("hello");
     }
