@@ -1,7 +1,7 @@
 package CodeUp;
-//CodeUp1001
-public class Print02 {
+//CodeUp1003
+public class Print03 {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        System.out.println("Hello\nWorld");
     }
 }
