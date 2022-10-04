@@ -10,20 +10,10 @@ public class coin {
         Scanner sc = new Scanner(System.in);
         int money = sc.nextInt();
 
-        int i=0;
-        int result = 0;
-        while(true){
-            if(i==8){
-                break;
-            }
-            if(money >= arr[i]){
-                money -= arr[i];
-                result += 1;
-            }else{
-                System.out.println(arr[i] + "원" + result + "개");
-                i++;
-                result = 0;
-            }
+        for(int i=0; i<arr.length; i++){
+            int cnt = money/arr[i];
+            money -= arr[i] * cnt;
+            System.out.println(arr[i] + "원" + cnt + "개");
         }
     }
 }
