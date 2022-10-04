@@ -3,35 +3,36 @@ package com;
 import java.util.Scanner;
     public class CoinTest {
         public static void main(String[] args) {
-            int[] arr = {50000, 10000, 5000, 1000, 500, 100, 50, 10};
 
             System.out.println("금액을 넣으세요: ");
             Scanner sc = new Scanner(System.in);
             int money = sc.nextInt();
 
-            int money50000 = money/arr[0];
-            System.out.println("50000원" + money50000 + "장" + " 나머지는" + money%arr[0]);
+            int money50000 = 50000;
+            int money10000 = 10000;
+            int money5000 = 5000;
+            int money1000 = 1000;
+            int money500 = 500;
+            int money100 = 100;
+            int money50 = 50;
+            int money10 = 10;
 
-            int money10000 = money/arr[1];
-            System.out.println("10000" + money10000 + "장" + " 나머지는" + money%arr[1]);
-
-            int money5000 = money/arr[2];
-            System.out.println("5000원" + money5000 + "장" + " 나머지는" + money%arr[2]);
-
-            int money1000 = money/arr[3];
-            System.out.println("1000원" + money1000 + "장" + " 나머지는" + money%arr[3]);
-
-            int money500 = money/arr[4];
-            System.out.println("500원" + money500 + "장"+ " 나머지는" + money%arr[4]);
-
-            int money100 = money/arr[5];
-            System.out.println("100원" + money100 + "장" + " 나머지는" + money%arr[5]);
-
-            int money50 = money/arr[6];
-            System.out.println("50원" + money50 + "장"+ " 나머지는" + money%arr[6]);
-
-            int money10 = money/arr[7];
-            System.out.println("10원" + money10 + "장"+ " 나머지는" + money%arr[7]);
+            System.out.println("50000원 " + money/money50000 + "개" + " 나머지는" + money%money50000);
+            money = money % 50000;
+            System.out.println("10000원 " + money/money10000 + "개" + " 나머지는" + money%money10000);
+            money = money % 10000;
+            System.out.println("5000원 " + money/money5000 + "개" + " 나머지는" + money%money5000);
+            money = money % 5000;
+            System.out.println("1000원 " + money/money1000 + "개" + " 나머지는" + money%money1000);
+            money = money % 1000;
+            System.out.println("500원 " + money/money500 + "개" +  "나머지는" + money%money500);
+            money = money % 500;
+            System.out.println("100원 " + money/money100 + "개" + " 나머지는" + money%money100);
+            money = money % 100;
+            System.out.println("50원 " + money/money50 + "개" +  "나머지는" + money%money50);
+            money = money % 50;
+            System.out.println("10원 " + money/money10 + "개" + "나머지는" + money%money10);
+            money = money % 10;
             }
 
 }
