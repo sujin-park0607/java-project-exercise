@@ -2,13 +2,11 @@ package java_1005;
 
 public class CalculatorMain {
     public static void main(String[] args) {
-        Calculator cal = new Calculator();
-        int a = 10;
-        int b = 20;
+        Calculator cal = new Calculator(10,20);
 
-        System.out.println(cal.plus(a,b));
-        System.out.println(cal.minus(a,b));
-        System.out.println(cal.multiple(a,b));
-        System.out.println(cal.divide(10.0,20.0));
+        System.out.println(cal.plus());
+        System.out.println(cal.minus());
+        System.out.println(cal.multiple());
+        System.out.println(cal.divide());
     }
 }
