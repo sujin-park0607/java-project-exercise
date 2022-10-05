@@ -1,4 +1,4 @@
-package java_1005;
+package java_1005.calcuation;
 
 public class CalculatorMain {
     public static void main(String[] args) {

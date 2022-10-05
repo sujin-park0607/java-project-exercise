@@ -1,4 +1,4 @@
-package java_1005;
+package java_1005.calcuation;
 
 public class RandomNumberGenerator implements NumberGenerator {
 
