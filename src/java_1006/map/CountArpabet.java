@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class CountArpabet {
     public static boolean isAlphabet(char s1){
-        if((s1 >= 54 && s1 <=90) || (s1 >= 97 && s1 <=122) ){
+        if((s1 >= 65 && s1 <=90) || (s1 >= 97 && s1 <=122) ){
             return true;
         }else{
             return false;
@@ -12,7 +12,6 @@ public class CountArpabet {
     }
     public static void main(String[] args) {
         String git = "https://github.com/dongyeon-0822/java-project-exercise";
-        git = git.toLowerCase(); //소문자로 변환
         HashMap<Character, Integer> arpabetCnt = new HashMap<>(); //해쉬맵 생성
 
         System.out.println(git.length());
