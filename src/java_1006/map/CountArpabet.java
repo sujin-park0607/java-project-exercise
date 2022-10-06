@@ -1,17 +1,19 @@
 package java_1006.map;
 
 import java.util.HashMap;
+import java.util.Locale;
 
 public class CountArpabet {
-    public static boolean isAlphabet(char s1){
-        if((s1 >= 65 && s1 <=90) || (s1 >= 97 && s1 <=122) ){
+    public static boolean isAlphabet(char ch){
+        if(ch >= 97 && ch <=122){
             return true;
         }else{
             return false;
         }
     }
     public static void main(String[] args) {
-        String git = "https://github.com/dongyeon-0822/java-project-exercise";
+        String git = "aaaAAAbbbBB";
+        git = git.toLowerCase();
         HashMap<Character, Integer> arpabetCnt = new HashMap<>(); //해쉬맵 생성
 
         System.out.println(git.length());
