@@ -5,9 +5,13 @@ import java.nio.charset.StandardCharsets;
 
 public class ReadFile {
     private String filePath;
+    private int byteSize;
+    private int lineSize;
 
-    public ReadFile(String filePath) {
+    public ReadFile(String filePath, int byteSize, int lineSize) {
         this.filePath = filePath;
+        this.byteSize = byteSize;
+        this.lineSize = lineSize;
     }
 
     public void findDir(){
@@ -35,11 +39,25 @@ public class ReadFile {
     }
 
     //n바이트씩 읽는 메서드
-    public void readNByte(int byteSize) throws IOException {
+    public void readNByte() throws IOException {
         BufferedReader bufferedReader = new BufferedReader( new FileReader(filePath) );
 
         for(int i=0; i<byteSize; i++){
             System.out.print((char)bufferedReader.read());
+        }
+    }
+
+    public void readLine() throws IOException{
+        BufferedReader br = new BufferedReader(new FileReader(filePath));
+        String line = br.readLine();
+        System.out.println(line);
+    }
+
+    public void readNLine() throws IOException{
+        BufferedReader br = new BufferedReader(new FileReader(filePath));
+//        String line = br.readLine();
+        for(int i=0; i < lineSize; i++){
+            System.out.println(br.readLine());
         }
     }
 
