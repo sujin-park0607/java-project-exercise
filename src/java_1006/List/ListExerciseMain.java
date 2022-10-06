@@ -1,4 +1,4 @@
-package java_1006.collection;
+package java_1006.List;
 
 import java.util.List;
 

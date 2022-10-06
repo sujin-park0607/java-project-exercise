@@ -23,6 +23,7 @@ public class StudentList1 {
         for(int i=0; i < students.size(); i++){
             if(i == Integer.parseInt(numArr[i])){
                 System.out.println(students.get(i));
+                System.out.println("hi");
             }
         }
     }
