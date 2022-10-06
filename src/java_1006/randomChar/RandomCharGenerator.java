@@ -2,7 +2,7 @@ package java_1006.randomChar;
 
 public class RandomCharGenerator {
 
-    public char generate(int num) {
-        return (char)((Math.random() * num)+97);
+    public char generate() {
+        return (char)((Math.random() * 26)+97);
     }
 }
