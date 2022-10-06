@@ -26,7 +26,7 @@ public class ReadFile {
     }
     //두바이트씩 읽는 메서드
     public void readTwoByte() throws IOException {
-        String filePath = "D:/backendSchool/git/java-project-push-exercise/" + fileName + ".txt";
+        String filePath = "./" + fileName + ".txt";
         BufferedReader bufferedReader = new BufferedReader( new FileReader(filePath) );
 
         for(int i=0; i<2; i++){
@@ -36,7 +36,7 @@ public class ReadFile {
 
     //n바이트씩 읽는 메서드
     public void readNByte(int byteSize) throws IOException {
-        String filePath = "D:/backendSchool/git/java-project-push-exercise/" + fileName + ".txt";
+        String filePath = "./" + fileName + ".txt";
         BufferedReader bufferedReader = new BufferedReader( new FileReader(filePath) );
 
         for(int i=0; i<byteSize; i++){
