@@ -15,7 +15,13 @@ public class ReadFile {
         File files[] = dir.listFiles();
         for(File file : files){
             System.out.println(file);
-        //D:\backendSchool\git\java-project-push-exercise\out\production\java-project-push-exercise
+//              .\.git
+//              .\.gitignore
+//              .\.idea
+//              .\a_file.txt
+//              .\java-project-push-exercise.iml
+//              .\out
+//              .\src
         }
     }
     //두바이트씩 읽는 메서드
