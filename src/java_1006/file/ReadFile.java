@@ -15,6 +15,7 @@ public class ReadFile {
         File files[] = dir.listFiles();
         for(File file : files){
             System.out.println(file);
+        //D:\backendSchool\git\java-project-push-exercise\out\production\java-project-push-exercise
         }
     }
     //두바이트씩 읽는 메서드
