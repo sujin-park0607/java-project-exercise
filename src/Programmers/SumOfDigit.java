@@ -21,7 +21,7 @@ public class SumOfDigit {
         if(result1 == 10){
             System.out.println("테스트 통과 했습니다");
         }else{
-            System.out.println("테스트 실패 "+ result1);
+            System.out.printf("테스트 실패 result: %d \n",result1);
         }
     }
 }
