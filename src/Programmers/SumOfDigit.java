@@ -2,17 +2,29 @@ package Programmers;
 import java.util.*;
 
 public class SumOfDigit {
+    //좋은 코드 아님 - n을 String으로 변경
+//    public int solution(int n) {
+//        int answer = 0;
+//        String str = Integer.toString(n);
+//
+//        for(int i=0; i<str.length(); i++){
+//            char ch = str.charAt(i);
+//            answer += Integer.parseInt(String.valueOf(ch));
+//        }
+//        return answer;
+//    }
+
+    //% 연산 이용 몫, 나머지
     public int solution(int n) {
         int answer = 0;
-        String str = Integer.toString(n);
 
-        for(int i=0; i<str.length(); i++){
-            char ch = str.charAt(i);
-            answer += Integer.parseInt(String.valueOf(ch));
+        while(n > 0){
+            answer += n % 10;
+            n = n/10;
         }
-
         return answer;
     }
+
 
     public static void main(String[] args) {
         SumOfDigit sod = new SumOfDigit();
