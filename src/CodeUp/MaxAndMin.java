@@ -41,9 +41,9 @@ public class MaxAndMin {
     public static void main(String[] args) {
         int[] arr = new int[]{3, 23, 85, 34, 17, 74, 25, 52, 65};
 
-        MaxAndMin max02 = new MaxAndMin();
-        System.out.println(max02.max(arr));
-        System.out.println(max02.min(arr));
+        MaxAndMin maxAndMin = new MaxAndMin();
+        System.out.println(maxAndMin.max(arr));
+        System.out.println(maxAndMin.min(arr));
 
 
     }
