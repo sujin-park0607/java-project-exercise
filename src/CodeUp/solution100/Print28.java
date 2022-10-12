@@ -1,0 +1,12 @@
+package CodeUp.solution100;
+
+import java.util.Scanner;
+
+//CodeUp1027
+public class Print28 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Long num = sc.nextLong();
+        System.out.println(num);
+    }
+}
