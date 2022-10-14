@@ -3,7 +3,7 @@ package java_1014;
 import java.util.Arrays;
 
 public class InsertSort {
-    void swap(int[] arr, int a, int b) {
+    void change(int[] arr, int a, int b) {
         int tmp = arr[a];
         arr[a] = arr[b];
         arr[b] = tmp;
@@ -13,9 +13,7 @@ public class InsertSort {
         for (int i = 1; i < arr.length; i++){
             for (int j = i; j > 0; j--){
                 if(arr[j] < arr[j-1]){
-                    int temp = arr[j-1];
-                    arr[j-1] = arr[j];
-                    arr[j] = temp;
+                    change(arr, j, j-1);
                 } else{
                     break;
                 }
