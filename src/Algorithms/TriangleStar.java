@@ -1,8 +1,10 @@
 package Algorithms;
 
+import java.util.Scanner;
+
 public class TriangleStar {
     public void printStar(int n, String now){
-        if( n== now.length()){
+        if( n== now.length()-1){
             return;
         }
         System.out.println(now);
@@ -10,9 +12,11 @@ public class TriangleStar {
 
     }
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
 
         TriangleStar star = new TriangleStar();
-        star.printStar(5,"*");
+        star.printStar(n,"*");
 
     }
 }
